@@ -6,19 +6,17 @@
     <title>Bienvenido a Sintek Oil</title>
     <link rel="stylesheet" href="styles2.css">
 </head>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>  
 <body>
     <!-- Header con logo y navegación -->
     <header>
         <div class="logo">
-            <!-- Reemplaza "logo.png" con tu propio archivo de logo -->
-            <img src="./png/IAMLUBRICANTES2.jpg" alt="Logo IAMLUBRICANTES" alt width="450" height="250" />
+            <!-- Agregado: texto alternativo más descriptivo para la imagen del logo -->
+            <img src="./png/IAMLUBRICANTES2.jpg" alt="Logo de la tienda IAMLUBRICANTES" width="450" height="250" />
         </div>
         <nav>
             <ul>
-                <li><a href="https://www.tiktok.com/@iamcars2020">Red Social</a></li>
+                <!-- Agregado: texto accesible y aria-label -->
+                <li><a href="https://www.tiktok.com/@iamcars2020" aria-label="Ir a nuestra página de TikTok">Red Social</a></li>
             </ul>
         </nav>
     </header>
@@ -32,16 +30,19 @@
     </section>
 
     <!-- Slider de imágenes -->
-    <section class="slider">
+    <section class="slider" aria-labelledby="sliderTitle">
+        <!-- Agregado: Título accesible para el slider -->
+        <h2 id="sliderTitle" class="sr-only">Galería de imágenes de productos</h2>
         <div class="slider-container">
+            <!-- Agregado: texto alternativo descriptivo para las imágenes del slider -->
             <div class="slider-item">
-                <img src="./png/GEAR-OIL.png" alt="GEAR-OIL">
+                <img src="./png/GEAR-OIL.png" alt="Imagen de lubricante GEAR-OIL para engranajes automotrices">
             </div>
             <div class="slider-item">
-                <img src="./png/vistony10w40.png" alt="vistony10w40">
+                <img src="./png/vistony10w40.png" alt="Imagen del lubricante Vistony 10W40 para motores a gasolina">
             </div>
             <div class="slider-item">
-                <img src="./png/ATTOM RACING SAE.png" alt="ATTOM RACING SAE">
+                <img src="./png/ATTOM RACING SAE.png" alt="Imagen del aceite ATTOM RACING SAE, un aceite sintético para motores de alta competencia">
             </div>
         </div>
     </section>
@@ -50,23 +51,23 @@
     <section class="products">
         <h2>Productos Destacados</h2>
         <div class="product-list">
-            <div class="product-item">
-                <img src="./png/GEAR-OIL.png" alt="Producto 1">
-                <h3>Producto 1</h3>
+            <div class="product-item" role="region" aria-labelledby="product1">
+                <img src="./png/GEAR-OIL.png" alt="Producto 1: Lubricante de alto rendimiento para engranajes automotrices, con aditivos de Azufre-Fosforo de extrema presión, que reduce el coeficiente de fricción y desgaste de una amplia variedad de transmisiones, cajas de cambios, caja de transferencia que el fabricante recomiende API GL-5.">
+                <h3 id="product1">Producto 1</h3>
                 <p>Lubricante de alto rendimiento para engranajes automotrices, con aditivos de Azufre-Fosforo de extrema presión, que reduce el coeficiente de fricción y desgaste de una amplia variedad de transmisiones, cajas de cambios, caja de transferencia que el fabricante recomiende API GL-5.</p>
-                <button>Ver más</button>
+                <button aria-label="Ver más detalles sobre Producto 1">Ver más</button>
             </div>
-            <div class="product-item">
-                <img src="./png/vistony10w40.png" alt="Producto 2">
-                <h3>Producto 2</h3>
+            <div class="product-item" role="region" aria-labelledby="product2">
+                <img src="./png/vistony10w40.png" alt="Producto 2: Aceite con tecnología sintética, desarrollada con aditivos de tecnología «Extreme Polymer» para motores a gasolina con inyección electrónica y Diesel livianos. Cumpliendo con la Secuencia Europea de aceite ACEA.">
+                <h3 id="product2">Producto 2</h3>
                 <p>Aceite con tecnología sintética, desarrollada con aditivos de tecnología «Extreme Polymer» para motores a gasolina con inyección electrónica y Diesel livianos. Cumpliendo con la Secuencia Europea de aceite ACEA.</p>
-                <button>Ver más</button>
+                <button aria-label="Ver más detalles sobre Producto 2">Ver más</button>
             </div>
-            <div class="product-item">
-                <img src="./png/ATTOM RACING SAE.png" alt="Producto 3">
-                <h3>Producto 3</h3>
+            <div class="product-item" role="region" aria-labelledby="product3">
+                <img src="./png/ATTOM RACING SAE.png" alt="Producto 3: Aceite sintético de calidad Premium 100% con base Ester diseñado para motores a gasolina de competencia que operan a elevadas cargas y velocidades muy altas, su tecnología de aditivos avanzado ESTHER TECH LF (Low Friction) que reduce el contacto metal con metal producido a diferentes condiciones de manejo.">
+                <h3 id="product3">Producto 3</h3>
                 <p>Aceite sintético de calidad Premium 100% con base Ester diseñado para motores a gasolina de competencia que operan a elevadas cargas y velocidades muy altas, su tecnología de aditivos avanzado ESTHER TECH LF (Low Friction) que reduce el contacto metal con metal producido a diferentes condiciones de manejo.</p>
-                <button>Ver más</button>
+                <button aria-label="Ver más detalles sobre Producto 3">Ver más</button>
             </div>
         </div>
     </section>
@@ -75,6 +76,11 @@
     <footer>
         <p>&copy; 2024 IAMLUBRICANTES. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
 
     <script src="script.js"></script>
 </body>
